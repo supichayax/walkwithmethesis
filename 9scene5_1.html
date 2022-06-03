@@ -41,12 +41,12 @@
 
         .ques p {
             width: 370px;
-            position: absolute;
             font-size: 20px;
             font-family: 'Kanit', sans-serif;
             text-align: center;
-            top: 0%;
-            margin: 5%;
+            margin: 0%;
+
+
 
         }
 
@@ -56,11 +56,12 @@
             background-color: #FFFFFF;
             border: 1px solid #222222;
             border-radius: 25px;
-            position: absolute;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
-            top: 50%;
+            flex-direction: column;
+
+
 
         }
 
@@ -126,80 +127,33 @@
         }
 
         .butt {
-            margin-top: 15%;
-            position: absolute;
+
             display: flex;
-            justify-content: center;
             align-items: center;
             flex-direction: column;
+            justify-content: space-evenly;
         }
 
-        @media screen and (max-width: 1000px) {
+        .all {
+            position: absolute;
+            justify-content: center;
+            display: flex;
+            align-items: flex-end;
+            height: 90vh;
+
+
+        }
+
+        @media screen and (max-width: 500px) {
             .ques {
                 width: 80vw;
-                height: 45vh;
-                background-color: #FFFFFF;
-                border: 0.5px solid #222222;
-                border-radius: 4vw;
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                top: 50%;
             }
         }
 
-        @media screen and (min-width: 1000px) and (max-width: 1050px) {
+        @media screen and (min-width: 500px) and (max-width: 1000px) {
             .ques {
-                width: 30vw;
-                height: 50vh;
-                background-color: #FFFFFF;
-                border: 0.5px solid #222222;
-                border-radius: 2vw;
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                top: 45%;
-            }
-        }
-
-        @media screen and (max-width: 375px) {
-            .ques {
-                width: 80vw;
-                height: 45vh;
-                background-color: #FFFFFF;
-                border: 0.5px solid #222222;
-                border-radius: 4vw;
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                top: 50%;
-            }
-        }
-
-        @media screen and (max-width: 1000px) {
-            .ques p {
-                width: 370px;
-                position: absolute;
-                font-size: 20px;
-                font-family: 'Kanit', sans-serif;
-                text-align: center;
-                top: 0%;
-                margin: 5%;
-
-            }
-        }
-
-        @media screen and (max-width: 1000px) {
-            .butt {
-                margin-top: 0%;
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
+                width: 50vw;
+                height: 40vh;
             }
         }
     </style>
@@ -212,17 +166,20 @@
             <img style="border-radius: 20px;" src="/gif/รวมsc2_2_1.gif" alt="">
 
         </div>
-        <div class="ques">
-            <p>คนที่คุณนึกถึงคือ...</p>
-            <div class="butt">
-                <button class="button-23"> <a href="/ครอบครัว/10scene6.html">ครอบครัว</a> </button>
-                <button class="button-23"><a href="/เพื่อนฝูง/10scene6.html">เพื่อนฝูง</a> </button>
-                <button class="button-23"><a href="/คนรัก/10scene6.html">คนรัก</a> </button>
-                <button class="button-23"><a href="/คนแปลกหน้า/10scene6.html">คนแปลกหน้า</a> </button>
-                <button class="button-23"><a href="/ไม่เห็นใคร/10scene6.html">ไม่เห็นใคร</a> </button>
-            </div>
+        <div class="all">
+            <div class="ques">
+                <p>คนที่คุณนึกถึงคือ...</p>
+                <div class="butt">
+                    <button class="button-23"> <a href="/ครอบครัว/10scene6.html">ครอบครัว</a> </button>
+                    <button class="button-23"><a href="/เพื่อนฝูง/10scene6.html">เพื่อนฝูง</a> </button>
+                    <button class="button-23"><a href="/คนรัก/10scene6.html">คนรัก</a> </button>
+                    <button class="button-23"><a href="/คนแปลกหน้า/10scene6.html">คนแปลกหน้า</a> </button>
+                    <button class="button-23"><a href="/ไม่เห็นใคร/10scene6.html">ไม่เห็นใคร</a> </button>
+                </div>
 
+            </div>
         </div>
+
 
 
     </div>

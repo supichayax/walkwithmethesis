@@ -50,51 +50,114 @@
 
         }
 
-        .butt1 {
+        .buttc {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            width: 375px;
             position: absolute;
+        }
+
+        .butt1 {
+
             width: 10vw;
-            left: 38%;
-            top: 82vh;
+
         }
 
         .butt2 {
-            position: absolute;
+
             width: 10vw;
-            right: 38%;
-            top: 82vh;
+
         }
 
-        .text1 {
+        .all {
+            justify-content: center;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 10vh;
+
+        }
+
+        .textc {
             position: absolute;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            width: 375px;
+            height: 0;
+            position: absolute;
+        }
+
+        .choice {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+
+
+        }
+
+
+        .text1 {
             font-size: 16x;
             font-family: 'Kanit', sans-serif;
-            left: 40.5%;
-            top: 82vh;
         }
 
         .text2 {
-            position: absolute;
+
             font-size: 16x;
             font-family: 'Kanit', sans-serif;
-            right: 40.5%;
-            top: 82vh;
+
         }
 
-        @media screen and (max-width: 1000px) {
-            .butt1 {
-                position: absolute;
+        @media screen and (max-width: 500px) {
+
+            .butt1,
+            .butt2 {
+
                 width: 40vw;
-                left: 7%;
-                top: 80vh;
             }
         }
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 500px) {
+            .all {
+                justify-content: center;
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 15vh;
+
+            }
+        }
+
+        @media screen and (min-width: 500px) and (max-width: 1000px) {
+
+            .butt1,
             .butt2 {
-                position: absolute;
-                width: 40vw;
-                right: 7%;
-                top: 80vh;
+
+                width: 20vw;
+            }
+        }
+
+        @media screen and (min-width: 500px) and (max-width: 1000px) {
+
+            .all {
+                justify-content: center;
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 15vh;
+
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+
+            .all {
+                justify-content: center;
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 15vh;
+
             }
         }
     </style>
@@ -109,13 +172,23 @@
         </div>
 
         </a>
-        <div class="buttc">
-            <a href="/ไม่เห็นใคร/เข้าไปทัก/17scene13_1.html"><img class="butt1" src="/gif/ปุ่มตัวเลือก.png" alt=""></a>
-            <a href="/ไม่เห็นใคร/เดินผ่าน/18scene13_2.html"> <img class="butt2" src="/gif/ปุ่มตัวเลือก.png" alt=""></a>
+        <div class="all">
+            <div class="choice">
+                <div class="buttc">
+                    <a href="/ไม่เห็นใคร/เข้าไปทัก/17scene13_1.html"><img class="butt1" src="/gif/ปุ่มตัวเลือก.png"
+                            alt=""></a>
+                    <a href="/ไม่เห็นใคร/เดินผ่าน/18scene13_2.html"> <img class="butt2" src="/gif/ปุ่มตัวเลือก.png"
+                            alt=""></a>
+
+                </div>
+                <div class="textc">
+                    <p class="text1">ไปทักทาย</p>
+                    <p class="text2">เดินต่อไป</p>
+                </div>
+            </div>
+
         </div>
-        <div class="textc" <p class="text1">ไปทักทาย</p>
-            <p class="text2">เดินต่อไป</p>
-        </div>
+
 </body>
 
 </html>
