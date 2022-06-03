@@ -53,7 +53,7 @@
         .ques {
             width: 20vw;
             height: 45vh;
-            background-color: #FFFFFF;
+            background-color: rgba(255, 255, 255, 0.803);
             border: 1px solid #222222;
             border-radius: 25px;
             display: flex;
@@ -93,7 +93,7 @@
         }
 
         .button-23:focus-visible {
-            box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+            box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.883) 0 0 0 4px;
             transition: box-shadow .2s;
         }
 
@@ -144,9 +144,17 @@
 
         }
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 500px) and (min-width: 400px) {
             .ques {
                 width: 80vw;
+                height: 35vh;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .ques {
+                width: 80vw;
+                height: 45vh;
             }
         }
 
