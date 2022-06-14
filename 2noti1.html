@@ -45,8 +45,8 @@
 
         .noti {
 
-            width: 280px;
-            height: 290px;
+            width: 90%;
+            height: 40%;
             background: #FFFFFF;
             border: 1px solid #FFFFFF;
             box-sizing: border-box;
@@ -61,6 +61,7 @@
             font-family: 'Kanit', sans-serif;
             text-align: center;
             margin: 0%;
+            font-size: 18px;
         }
 
         a :hover {
@@ -78,13 +79,6 @@
             width: 50px;
         }
 
-        .logo {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            height: 152px;
-        }
-
         .name {
             font-size: 2rem;
             font-family: 'Gochi Hand', cursive;
@@ -95,6 +89,30 @@
             display: flex;
             justify-content: center;
             z-index: 1;
+            margin-top: 30%;
+        }
+
+        .butt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+        }
+
+        .buttc {
+            width: 40%;
+        }
+
+        .text {
+            position: absolute;
+            text-decoration: none;
+
+        }
+
+        a {
+            margin-top: 0%;
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
@@ -107,32 +125,31 @@
             </div>
 
             <div class="noti">
-                <p style="font-size:20px ;">คำเตือน</p>
-                <br>
-                <p>แบบทดสอบนี้ไม่ใช่ <br>
-                    แบบทดสอบทางจิตวิทยา <br>
-                    ไม่ใช่ตัวตัดสินตัวตนของคุณ <br>
-                    สิ่งที่เราต้องการมีเพียงความรู้สึกดีๆ <br>
-                    และกำลังใจให้แก่คุณเท่านั้น</p>
 
-                <a href="/3intro.html"
-                    style="z-index: 1; color: black; font-family: 'Kanit', sans-serif; margin-top: 20px; "> ไปต่อ >
+                <p>
+                    คุณสามารถคลิกที่ปุ่มด้านล่าง <br> เพื่อเปิดเพลงในแท็บใหม่ฟังขณะเล่น <br>
+                    เพื่ออรรถรสในการเล่น</p>
+                <div class="butt">
+
+                    <a href="https://soundcloud.app.goo.gl/67Wf7dPBSc21YZPY8" target="_blank" style="color: black;  ">
+                        <img class="buttc" src="/gif/ปุ่มตัวเลือก.png" alt="">
+
+
+                    </a>
+
+                    <a href="https://soundcloud.com/supichaya-bowornwongsathien-629830301/walk-with-me/s-gk4kJyR67FR?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                        target="_blank" style="color: black;  " class="text">
+                        <p>เปิดเพลง</p>
+                    </a>
+                </div>
+            </div>
+            <div>
+
+                <a href="/3intro.html" style=" color: black; z-index: 1; text-decoration: underline;font-family: 'Kanit' , sans-serif;
+                    font-size: 20px; display: flex; justify-content: center; margin-bottom: 100px; ">
+                    <p>ไปต่อ></p>
                 </a>
             </div>
-            <div class="logo">
-                <div class="img">
-                    <img src="/gif/jc_logo.png" alt="">
-                    <img src="/gif/1200px-Emblem_of_Thammasat_University.png" alt="">
-                    <img src="/gif/logo keylight .png" alt="">
-                </div>
-                <div class="img">
-                    <img src="/gif/kplearning.png" alt="">
-                    <img src="/gif/RMA.jpg" alt="">
-                    <img src="/gif/Impress-Printing-Logo.png" alt="">
-
-                </div>
-            </div>
-
 
 
         </div>
